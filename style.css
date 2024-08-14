@@ -169,6 +169,7 @@ nav .close path {
   gap: 70px;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 .about .about-image {
   width: 400px;
@@ -176,6 +177,7 @@ nav .close path {
 .about .about-image img {
   width: 100%;
   border-radius: 50%;
+  animation: Bellaintroload 3s forwards;
 }
 .about .about-text-container {
   width: 600px;
@@ -231,7 +233,6 @@ nav .close path {
 .projects .projects-container {
   display: flex;
   flex-wrap: wrap;
-  background: var(--secondary-color);
   padding: 16px 32px;
   gap: 30px;
 }
@@ -244,6 +245,7 @@ nav .close path {
 }
 .projects .projects-container .projects-box .projects-image img {
   width: 100%;
+  border: 1px solid var(--secondary-color);
 }
 .projects .projects-container .projects-box .projects-details {
   display: flex;
@@ -251,7 +253,7 @@ nav .close path {
 }
 .projects .projects-container .projects-box .projects-details h1 {
   font-family: andika;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .projects .projects-container .projects-box .projects-details h1:hover {
   color: palevioletred;
@@ -271,10 +273,10 @@ nav .close path {
   width: 20px;
 }
 .projects .projects-container .projects-box .projects-details svg path {
-  fill: var(--primary-color);
+  fill: var(--secondary-color);
 }
 .projects .projects-container .projects-box .projects-about p {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 1.2rem;
 }
 
