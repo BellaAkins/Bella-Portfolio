@@ -205,6 +205,8 @@ nav .close path {
   flex-wrap: wrap;
   padding: 14px 22px;
   margin: 0 auto;
+  padding: 40px;
+  background: green;
 }
 .skills .skills-container .icons {
   display: flex;
@@ -217,7 +219,7 @@ nav .close path {
   display: flex;
 }
 .skills .skills-container .icons p {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   color: var(--secondary-color);
 }
 
