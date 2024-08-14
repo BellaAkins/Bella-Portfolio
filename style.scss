@@ -50,6 +50,10 @@ header {
     width: 36.8px;
     margin-top: -0.2 6.4px;
     cursor: pointer;
+
+    path {
+      fill: var(--secondary-color);
+    }
   }
 
   .logo {
@@ -72,7 +76,6 @@ header {
   .menu {
     width: 38px;
     padding: 6px;
-    margin-top: -0.2 6.4px;
     cursor: pointer;
   }
 }
@@ -109,7 +112,7 @@ nav {
     //  background: var(--secondary-color);
 
     path {
-      fill: black;
+      fill: var(--primary-color);
     }
   }
 }
