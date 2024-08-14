@@ -204,11 +204,12 @@ nav .close path {
   max-width: 1200px;
   flex-wrap: wrap;
   padding: 14px 22px;
+  margin: 0 auto;
 }
 .skills .skills-container .icons {
   display: flex;
-  width: 80px;
-  gap: 15px;
+  width: 100px;
+  gap: 8px;
   margin: 0 auto;
 }
 .skills .skills-container .icons img {
