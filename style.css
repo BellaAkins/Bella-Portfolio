@@ -211,7 +211,7 @@ nav .close path {
 .skills .skills-container .icons {
   display: flex;
   width: 100px;
-  gap: 8px;
+  gap: 5px;
   margin: 0 auto;
 }
 .skills .skills-container .icons img {
