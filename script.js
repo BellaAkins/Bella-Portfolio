@@ -4,6 +4,13 @@ const nav = document.querySelector("nav");
 
 menu.addEventListener("click", () => {
   nav.classList.add("open-nav");
+  /*
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    menu.src = "images/menu-black.svg";
+  } else {
+    menu.src = "images/menu-white.svg";
+  }*/
 });
 close.addEventListener("click", () => {
   nav.classList.remove("open-nav");
@@ -18,13 +25,13 @@ icon.onclick = function () {
   }
 };
 /*
-icon.onclick = function () {
-  document.body.classList.toggle("light-theme");
-  if (document.body.classList.contains("light-theme")) {
-    close.src = "images/close-circle.svg";
-    menu.src = "images/menu-icon.svg";
+menu.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    menu.src = "images/menu-black.svg";
   } else {
-    close.src = "images/close-icon.svg";
-    menu.src = "images/menu.svg";
+    menu.src = "images/menu-white.svg";
   }
-};*/
+};
+
+*/
