@@ -37,6 +37,10 @@ li {
   --secondary-color: #000106;
 }
 
+.open-nav {
+  transform: translateX(0%);
+}
+
 body {
   background: var(--primary-color);
 }
@@ -48,14 +52,15 @@ header {
 
   svg {
     width: 2.3em;
-    margin-top: -0.2.4em;
+    margin-top: -0.2 6.4px;
     cursor: pointer;
   }
 
   .logo {
     color: var(--secondary-color);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    padding: 8px 16px;
   }
 
   span {
@@ -70,9 +75,10 @@ header {
 
   .menu {
     width: 30px;
-    margin-top: -0.2.4em;
+    padding: 6px;
+    margin-top: -0.2 6.4px;
     cursor: pointer;
-    background: pink;
+    background: rgb(224, 138, 152);
   }
 }
 
@@ -89,9 +95,10 @@ nav {
 
   a {
     color: var(--primary-color);
-    padding: 0.75em 2em;
+    padding: 16px 32px;
     display: block;
     font-weight: bold;
+    font-size: 1.2rem;
   }
 
   ul {
@@ -112,35 +119,42 @@ nav {
   }
 }
 
-section.hero {
-  color: black;
-
-  h1 {
-    font-size: 2.2rem;
-    margin-top: 1.2em;
-    line-height: 2.5rem;
-
-    span {
-      color: #fff;
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 18px;
+  .hero-image {
+    img {
+      width: 100%;
+      border-radius: 50%;
+      animation: Bellaintroload 3s forwards;
     }
   }
+  .hero-text {
+    margin-left: 16px;
+    color: var(--secondary-color);
+    h1 {
+      margin-top: 36px;
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 45.6px;
+      letter-spacing: -0.38px;
+      width: 340px;
 
-  .subhead {
-    font-size: 1.2rem;
-    margin-top: 0.9em;
-    color: #fff;
-    font-weight: 500;
-  }
+      span {
+        font-family: "mv boli";
+        font-weight: 700;
+        line-height: 45.6px;
+        letter-spacing: -0.38px;
+      }
+    }
 
-  .down-arrow {
-    stroke: #fff;
-    position: absolute;
-    bottom: 2em;
-    width: 1em;
-    animation: Bellamovearrow 1s alternate-reverse infinite;
-
-    path {
-      fill: #fff;
+    p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 24px;
+      margin-top: 18px;
+      width: 312px;
     }
   }
 }
@@ -148,14 +162,6 @@ section.hero {
 @media only screen and (min-width: 680px) {
   body {
     margin: 1.5em 5em;
-  }
-
-  section.hero {
-    h1 {
-      font-size: 2.8rem;
-      margin-top: 2em;
-      line-height: 3.3rem;
-    }
   }
 }
 
@@ -180,74 +186,59 @@ section.hero {
 
       a {
         color: var(--secondary-color);
-        padding: 0.5em 1em;
-        font-size: 0.9rem;
+        padding: 8px 16px;
+        font-size: 1.3rem;
 
         &:hover {
-          background: none;
-          background: black;
+          color: var(--secondary-color);
+        }
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 2px;
+          background: var(--secondary-color);
+          display: block;
+          transition: 0.2s linear;
+        }
+
+        &:hover::after {
           width: 100%;
-          border-radius: 5em;
         }
       }
     }
   }
 
-  .hero-img {
-    width: 50%;
-    height: 100%;
-    right: 0;
-    left: unset;
-    width: 42em;
+  #icon {
+    margin-bottom: 13px;
   }
 
-  header {
-    .logo {
-      color: #5688c7;
+  .hero {
+    display: flex;
+    flex-direction: row;
+    .hero-image {
+      width: 100%;
+    }
+    .hero-text {
+      padding: 1.2em;
+      h1 {
+        margin-top: 1.3em;
+        // color: #0b63b2;
+        width: 798px;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 76.8px;
+        letter-spacing: -0.64px;
+      }
 
-      span {
-        color: black;
+      p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        width: 637px;
       }
     }
   }
-
-  section.hero {
-    height: auto;
-    width: 40%;
-    margin-bottom: 8em;
-    padding: 1em;
-
-    h1 {
-      font-size: 3rem;
-      margin-top: 2.1em;
-      line-height: 3.3rem;
-
-      span {
-        color: black;
-      }
-    }
-
-    .subhead {
-      color: black;
-      margin-bottom: 3em;
-    }
-
-    .down-arrow {
-      stroke: #000;
-      position: absolute;
-      bottom: 0.4em;
-      width: 1em;
-      animation: Bellamovearrow 1s alternate-reverse infinite;
-
-      path {
-        fill: #000;
-      }
-    }
-  }
-}
-
-.open-nav {
-  transform: translateX(0%);
 }
 
 @keyframes Bellaintroload {
