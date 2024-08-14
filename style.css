@@ -194,7 +194,7 @@ nav .close path {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
 }
 .skills .skills-container {
   display: flex;
@@ -220,6 +220,62 @@ nav .close path {
 .skills .skills-container .icons p {
   font-size: 1.15rem;
   color: var(--secondary-color);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.projects .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--secondary-color);
+  padding: 16px 32px;
+  gap: 30px;
+}
+.projects .projects-container .projects-box {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.projects .projects-container .projects-box .projects-image img {
+  width: 100%;
+}
+.projects .projects-container .projects-box .projects-details {
+  display: flex;
+  justify-content: space-between;
+}
+.projects .projects-container .projects-box .projects-details h1 {
+  font-family: andika;
+  color: var(--primary-color);
+}
+.projects .projects-container .projects-box .projects-details h1:hover {
+  color: palevioletred;
+}
+.projects .projects-container .projects-box .projects-details h1::after {
+  content: "";
+  width: 0;
+  background: pink;
+  height: 2px;
+  display: block;
+  transition: 0.3s linear;
+}
+.projects .projects-container .projects-box .projects-details h1:hover::after {
+  width: 100%;
+}
+.projects .projects-container .projects-box .projects-details svg {
+  width: 20px;
+}
+.projects .projects-container .projects-box .projects-details svg path {
+  fill: var(--primary-color);
+}
+.projects .projects-container .projects-box .projects-about p {
+  color: var(--primary-color);
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 680px) {
