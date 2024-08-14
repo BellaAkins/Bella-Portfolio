@@ -29,11 +29,6 @@ li {
   --secondary-color: #fff;
 }
 
-.light-theme {
-  --primary-color: #fff;
-  --secondary-color: #000106;
-}
-
 .open-nav {
   transform: translateX(0%);
 }
@@ -48,7 +43,7 @@ header {
   padding: 10px;
 }
 header svg {
-  width: 2.3em;
+  width: 36.8px;
   margin-top: -0.2 6.4px;
   cursor: pointer;
 }
@@ -67,11 +62,10 @@ header #icon {
   background: none;
 }
 header .menu {
-  width: 30px;
+  width: 38px;
   padding: 6px;
   margin-top: -0.2 6.4px;
   cursor: pointer;
-  background: rgb(224, 138, 152);
 }
 
 nav {
@@ -98,9 +92,8 @@ nav ul {
 }
 nav .close {
   float: right;
-  margin: 2em;
-  width: 2.5em;
-  background: pink;
+  margin: 32px;
+  width: 38px;
 }
 nav .close path {
   fill: black;
@@ -109,6 +102,7 @@ nav .close path {
 .hero {
   display: flex;
   justify-content: space-between;
+  gap: 70px;
   align-items: center;
   flex-wrap: wrap;
   padding: 14px 18px;
@@ -123,6 +117,9 @@ nav .close path {
   animation: Bellaintroload 3s forwards;
 }
 .hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 500px;
   margin: 0 auto;
   color: var(--secondary-color);
@@ -142,14 +139,14 @@ nav .close path {
 }
 .hero .hero-text p {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   margin-top: 18px;
 }
 
 @media only screen and (min-width: 680px) {
   body {
-    margin: 1.5em 5em;
+    margin: 24px 80px;
   }
   .hero {
     display: flex;
@@ -230,13 +227,5 @@ nav .close path {
   to {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-}
-@keyframes Bellamovearrow {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(0);
   }
 }/*# sourceMappingURL=style.css.map */
