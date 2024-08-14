@@ -8,6 +8,27 @@
   font-family: poppins;
   color: var(--secondary-color);
 }
+* .title h1 {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* .title h1 span {
+  color: palevioletred;
+  margin-left: 15px;
+  font-family: andika;
+  font-style: italic;
+}
+* .title h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--secondary-color);
+  display: block;
+  position: relative;
+  bottom: 10px;
+}
 
 a {
   text-decoration: none;
@@ -148,7 +169,6 @@ nav .close path {
   gap: 70px;
   align-items: center;
   flex-wrap: wrap;
-  padding: 14px 18px;
 }
 .about .about-image {
   width: 400px;
@@ -162,28 +182,6 @@ nav .close path {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 38px;
-}
-.about .about-text-container .title h1 {
-  font-size: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about .about-text-container .title h1 span {
-  color: palevioletred;
-  margin-left: 15px;
-  font-family: andika;
-  font-style: italic;
-}
-.about .about-text-container .title h1 span::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: var(--secondary-color);
-  display: block;
-  position: relative;
-  bottom: 10px;
 }
 .about .about-text-container .about-text p {
   font-size: 1rem;
@@ -192,14 +190,48 @@ nav .close path {
   letter-spacing: -0.38px;
 }
 
+.skills {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.skills .skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 14px 22px;
+}
+.skills .skills-container .icons {
+  display: flex;
+  width: 80px;
+  gap: 15px;
+  margin: 0 auto;
+}
+.skills .skills-container .icons img {
+  width: 25px;
+  display: flex;
+}
+.skills .skills-container .icons p {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+}
+
 @media only screen and (min-width: 680px) {
   body {
     margin: 24px 80px;
   }
-  .hero {
+  .hero,
+  .about {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+  .about {
+    flex-direction: row-reverse;
   }
 }
 @media only screen and (min-width: 920px) {
