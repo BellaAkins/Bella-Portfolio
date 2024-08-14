@@ -48,6 +48,9 @@ header svg {
   margin-top: -0.2 6.4px;
   cursor: pointer;
 }
+header svg path {
+  fill: var(--secondary-color);
+}
 header .logo {
   color: var(--secondary-color);
   font-weight: bold;
