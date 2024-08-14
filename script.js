@@ -4,13 +4,6 @@ const nav = document.querySelector("nav");
 
 menu.addEventListener("click", () => {
   nav.classList.add("open-nav");
-  /*
-  document.body.classList.toggle("dark-theme");
-  if (document.body.classList.contains("dark-theme")) {
-    menu.src = "images/menu-black.svg";
-  } else {
-    menu.src = "images/menu-white.svg";
-  }*/
 });
 close.addEventListener("click", () => {
   nav.classList.remove("open-nav");
@@ -21,17 +14,6 @@ icon.onclick = function () {
   if (document.body.classList.contains("dark-theme")) {
     icon.src = "images/sun-icon.svg";
   } else {
-    icon.src = "images/moon.svg";
+    icon.src = "images/moon-icon.svg";
   }
 };
-/*
-menu.onclick = function () {
-  document.body.classList.toggle("dark-theme");
-  if (document.body.classList.contains("dark-theme")) {
-    menu.src = "images/menu-black.svg";
-  } else {
-    menu.src = "images/menu-white.svg";
-  }
-};
-
-*/
