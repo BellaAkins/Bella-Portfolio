@@ -4,12 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  margin: 1em;
   font-family: poppins;
-  color: #f2f2f2;
+  color: var(--secondary-color);
 }
 
 a {
@@ -35,6 +31,7 @@ li {
 }
 
 body {
+  margin: 16px;
   background: var(--primary-color);
 }
 
@@ -141,7 +138,55 @@ nav .close path {
   font-size: 1rem;
   font-weight: 400;
   line-height: 30px;
-  margin-top: 18px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 14px 18px;
+}
+.about .about-image {
+  width: 400px;
+}
+.about .about-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about .about-text-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 38px;
+}
+.about .about-text-container .title h1 {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-text-container .title h1 span {
+  color: palevioletred;
+  margin-left: 15px;
+  font-family: "mv boli";
+}
+.about .about-text-container .title h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--secondary-color);
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+.about .about-text-container .about-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.38px;
 }
 
 @media only screen and (min-width: 680px) {
@@ -216,6 +261,13 @@ nav .close path {
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 36px;
+    width: 637px;
+  }
+  .about {
+    flex-direction: row-reverse;
+  }
+  .about .about-text-container .about-text p {
+    font-size: 1.3rem;
     width: 637px;
   }
 }
