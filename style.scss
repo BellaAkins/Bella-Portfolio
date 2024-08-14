@@ -189,6 +189,7 @@ nav {
   gap: 70px;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 60px;
   //  padding: 14px 18px;
 
   .about-image {
@@ -196,6 +197,7 @@ nav {
     img {
       width: 100%;
       border-radius: 50%;
+      animation: Bellaintroload 3s forwards;
     }
   }
   .about-text-container {
@@ -263,7 +265,7 @@ nav {
   .projects-container {
     display: flex;
     flex-wrap: wrap;
-    background: var(--secondary-color);
+    // background: var(--secondary-color);
     padding: 16px 32px;
     gap: 30px;
     .projects-box {
@@ -275,6 +277,7 @@ nav {
       .projects-image {
         img {
           width: 100%;
+          border: 1px solid var(--secondary-color);
         }
       }
       .projects-details {
@@ -283,7 +286,7 @@ nav {
 
         h1 {
           font-family: andika;
-          color: var(--primary-color);
+          color: var(--secondary-color);
 
           &:hover {
             color: palevioletred;
@@ -305,14 +308,14 @@ nav {
         svg {
           width: 20px;
           path {
-            fill: var(--primary-color);
+            fill: var(--secondary-color);
           }
         }
       }
 
       .projects-about {
         p {
-          color: var(--primary-color);
+          color: var(--secondary-color);
           font-size: 1.2rem;
         }
       }
