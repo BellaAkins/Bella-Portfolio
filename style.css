@@ -68,7 +68,6 @@ header #icon {
 header .menu {
   width: 38px;
   padding: 6px;
-  margin-top: -0.2 6.4px;
   cursor: pointer;
 }
 
@@ -100,7 +99,7 @@ nav .close {
   width: 38px;
 }
 nav .close path {
-  fill: black;
+  fill: var(--primary-color);
 }
 
 .hero {
