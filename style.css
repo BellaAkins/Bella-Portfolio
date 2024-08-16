@@ -44,7 +44,7 @@ li {
 }
 
 .dark-theme {
-  --primary-color: #000106;
+  --primary-color: #212121;
   --secondary-color: #fff;
 }
 
@@ -102,7 +102,7 @@ nav a {
   color: var(--primary-color);
   padding: 16px 32px;
   display: block;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 nav ul {
@@ -278,6 +278,91 @@ nav .close path {
 .projects .projects-container .projects-box .projects-about p {
   color: var(--secondary-color);
   font-size: 1.2rem;
+}
+
+.contact {
+  margin-top: 70px;
+}
+.contact .contact-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.contact .contact-container .logo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 32px;
+  margin: 0 auto;
+}
+.contact .contact-container .logo-card .logo {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 2.7rem;
+  padding: 8px 16px;
+}
+.contact .contact-container .logo-card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-container .logo-card .details h2 {
+  color: palevioletred;
+  font-size: 1.4rem;
+}
+.contact .contact-container .logo-card .icons {
+  display: flex;
+  gap: 15px;
+}
+.contact .contact-container .logo-card .icons img {
+  width: 30px;
+  border-radius: 50%;
+}
+.contact .contact-container .contact-card {
+  margin: 0 auto;
+  padding: 40px;
+}
+.contact .contact-container .contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 15px;
+}
+.contact .contact-container .contact-card input,
+.contact .contact-container .contact-card textarea {
+  width: 100%;
+  padding: 10px;
+}
+.contact .contact-container .contact-card input::-moz-placeholder, .contact .contact-container .contact-card textarea::-moz-placeholder {
+  padding: 3px;
+  font-size: 0.8rem;
+}
+.contact .contact-container .contact-card input::placeholder,
+.contact .contact-container .contact-card textarea::placeholder {
+  padding: 3px;
+  font-size: 0.8rem;
+}
+.contact .contact-container .contact-card input[type=submit] {
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  min-width: 300px;
+  width: 50%;
+  font-size: 1rem;
+  background: palevioletred;
+  border: none;
+  color: #f2f2f2;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.contact .contact-container .contact-card input[type=submit]:hover {
+  font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 680px) {
