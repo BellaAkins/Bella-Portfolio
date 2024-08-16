@@ -50,7 +50,7 @@ li {
 }
 
 .dark-theme {
-  --primary-color: #000106;
+  --primary-color: #212121;
   --secondary-color: #fff;
 }
 
@@ -114,7 +114,7 @@ nav {
     color: var(--primary-color);
     padding: 16px 32px;
     display: block;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 1.2rem;
   }
 
@@ -318,6 +318,101 @@ nav {
           color: var(--secondary-color);
           font-size: 1.2rem;
         }
+      }
+    }
+  }
+}
+
+//Contact
+.contact {
+  //  background: var(--secondary-color);
+  margin-top: 70px;
+  .contact-container {
+    //background: green;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+
+    .logo-card {
+      // width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 16px 32px;
+
+      margin: 0 auto;
+      .logo {
+        color: var(--secondary-color);
+        font-weight: bold;
+        font-size: 2.7rem;
+        padding: 8px 16px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          color: palevioletred;
+          font-size: 1.4rem;
+        }
+      }
+
+      .icons {
+        display: flex;
+        gap: 15px;
+
+        img {
+          width: 30px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .contact-card {
+      margin: 0 auto;
+      padding: 40px;
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 15px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        //  border: 2px solid var(--primary-color);
+
+        &::placeholder {
+          padding: 3px;
+          font-size: 0.8rem;
+        }
+      }
+
+      input[type="submit"] {
+        display: block;
+        border-radius: 10px;
+        margin: 0 auto;
+        min-width: 300px;
+        width: 50%;
+        font-size: 1rem;
+        background: palevioletred;
+        border: none;
+        color: #f2f2f2;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      input[type="submit"]:hover {
+        font-size: 1.1rem;
       }
     }
   }
