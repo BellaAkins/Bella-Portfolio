@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: poppins;
   color: var(--secondary-color);
+  scroll-behavior: smooth;
 
   .title {
     h1 {
@@ -333,7 +334,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     flex-wrap: wrap;
 
     .logo-card {
@@ -342,14 +343,17 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 15px;
-      padding: 16px 32px;
-
+      gap: 35px;
+      border: 2px solid palevioletred;
+      border-radius: 20%;
+      padding: 15px 30px;
       margin: 0 auto;
+      margin-bottom: 80px;
+      animation: Bellaintroload 3s forwards;
       .logo {
         color: var(--secondary-color);
         font-weight: bold;
-        font-size: 2.7rem;
+        font-size: 3rem;
         padding: 8px 16px;
       }
 
@@ -361,7 +365,7 @@ nav {
         justify-content: center;
         h2 {
           color: palevioletred;
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -523,6 +527,25 @@ nav {
         p {
           font-size: 1.3rem;
           width: 637px;
+        }
+      }
+    }
+  }
+  .contact {
+    .contact-container {
+      .logo-card {
+        padding: 60px;
+
+        border-radius: 50%;
+
+        .logo {
+          font-size: 4rem;
+        }
+
+        .details {
+          h2 {
+            font-size: 1.4rem;
+          }
         }
       }
     }
