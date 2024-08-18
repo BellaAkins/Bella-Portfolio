@@ -466,6 +466,9 @@ nav .close path {
   .contact .contact-container .logo-card .details h2 {
     font-size: 1.4rem;
   }
+  .contact .contact-container .contact-card input[type=submit] {
+    padding: 10px;
+  }
 }
 @keyframes Bellaintroload {
   from {
